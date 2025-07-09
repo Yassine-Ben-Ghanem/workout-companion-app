@@ -1,0 +1,213 @@
+{
+  "workouts": [
+    {
+      "id": "1",
+      "name": "Full Body Strength",
+      "date": "2023-06-15",
+      "time": "07:30",
+      "exercises": [
+        {
+          "id": "e1",
+          "name": "Squats",
+          "sets": 3,
+          "reps": 12,
+          "weight": 60,
+          "restTime": 90,
+          "notes": "Focus on form"
+        },
+        {
+          "id": "e2",
+          "name": "Bench Press",
+          "sets": 3,
+          "reps": 10,
+          "weight": 45,
+          "restTime": 120
+        },
+        {
+          "id": "e3",
+          "name": "Deadlifts",
+          "sets": 3,
+          "reps": 8,
+          "weight": 80,
+          "restTime": 180,
+          "notes": "Keep back straight"
+        }
+      ],
+      "notes": "Increase weights next session",
+      "completed": true,
+      "completedDate": "2023-06-15",
+      "duration": 60,
+      "calories": 450,
+      "type": "STRENGTH",
+      "location": "GYM"
+    },
+    {
+      "id": "2",
+      "name": "HIIT Cardio",
+      "date": "2023-06-16",
+      "time": "18:00",
+      "exercises": [
+        {
+          "id": "e4",
+          "name": "Burpees",
+          "sets": 4,
+          "reps": 15,
+          "restTime": 30
+        },
+        {
+          "id": "e5",
+          "name": "Mountain Climbers",
+          "sets": 4,
+          "reps": 30,
+          "restTime": 30
+        },
+        {
+          "id": "e6",
+          "name": "Jump Squats",
+          "sets": 4,
+          "reps": 20,
+          "restTime": 30
+        }
+      ],
+      "notes": "Try to reduce rest time next session",
+      "completed": false,
+      "duration": 30,
+      "calories": 350,
+      "type": "HIIT",
+      "location": "HOME"
+    },
+    {
+      "id": "3",
+      "name": "Outdoor Run",
+      "date": "2023-06-17",
+      "time": "08:00",
+      "exercises": [
+        {
+          "id": "e7",
+          "name": "Running",
+          "sets": 1,
+          "reps": 1,
+          "notes": "5km run"
+        }
+      ],
+      "notes": "Morning run in the park",
+      "completed": false,
+      "duration": 25,
+      "calories": 250,
+      "type": "CARDIO",
+      "location": "OUTDOOR"
+    },
+    {
+      "id": "4",
+      "name": "Yoga Session",
+      "date": "2023-06-18",
+      "time": "19:30",
+      "exercises": [
+        {
+          "id": "e8",
+          "name": "Sun Salutation",
+          "sets": 3,
+          "reps": 5
+        },
+        {
+          "id": "e9",
+          "name": "Warrior Poses",
+          "sets": 2,
+          "reps": 10
+        }
+      ],
+      "notes": "Focus on breathing",
+      "completed": false,
+      "duration": 45,
+      "calories": 150,
+      "type": "FLEXIBILITY",
+      "location": "HOME"
+    }
+  ],
+  "weather": [
+    {
+      "id": "1",
+      "location": "Paris",
+      "temperature": 22,
+      "condition": "Sunny",
+      "icon": "clear-day",
+      "humidity": 45,
+      "windSpeed": 10,
+      "date": "2023-06-15",
+      "forecast": [
+        {
+          "date": "2023-06-16",
+          "temperature": 24,
+          "condition": "Partly Cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "date": "2023-06-17",
+          "temperature": 25,
+          "condition": "Sunny",
+          "icon": "clear-day"
+        },
+        {
+          "date": "2023-06-18",
+          "temperature": 23,
+          "condition": "Partly Cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "date": "2023-06-19",
+          "temperature": 20,
+          "condition": "Rain",
+          "icon": "rain"
+        },
+        {
+          "date": "2023-06-20",
+          "temperature": 19,
+          "condition": "Rain",
+          "icon": "rain"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "location": "New York",
+      "temperature": 28,
+      "condition": "Partly Cloudy",
+      "icon": "partly-cloudy-day",
+      "humidity": 60,
+      "windSpeed": 15,
+      "date": "2023-06-15",
+      "forecast": [
+        {
+          "date": "2023-06-16",
+          "temperature": 30,
+          "condition": "Sunny",
+          "icon": "clear-day"
+        },
+        {
+          "date": "2023-06-17",
+          "temperature": 29,
+          "condition": "Sunny",
+          "icon": "clear-day"
+        },
+        {
+          "date": "2023-06-18",
+          "temperature": 27,
+          "condition": "Partly Cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "date": "2023-06-19",
+          "temperature": 26,
+          "condition": "Thunderstorm",
+          "icon": "thunderstorm"
+        },
+        {
+          "date": "2023-06-20",
+          "temperature": 25,
+          "condition": "Rain",
+          "icon": "rain"
+        }
+      ]
+    }
+  ]
+}
