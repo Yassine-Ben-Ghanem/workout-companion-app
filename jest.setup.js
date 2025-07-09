@@ -98,7 +98,6 @@ jest.mock('react-native-config', () => ({
 // Mock React Native Testing Library
 jest.mock('@testing-library/react-native', () => {
   const actualRTL = jest.requireActual('@testing-library/react-native');
-  const React = require('react');
 
   const mockQueries = {
     getByText: jest.fn(text => ({ children: text })),

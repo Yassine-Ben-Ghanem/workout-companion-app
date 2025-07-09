@@ -231,9 +231,7 @@ const WorkoutDetailScreen: React.FC<WorkoutDetailScreenProps> = ({
             <View
               style={[
                 styles.statusBadge,
-                {
-                  backgroundColor: workout.completed ? '#4CAF50' : '#FFC107',
-                },
+                workout.completed ? styles.completedBadge : styles.plannedBadge,
               ]}
             >
               <Text style={styles.badgeText}>
@@ -500,6 +498,12 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  completedBadge: {
+    backgroundColor: '#4CAF50',
+  },
+  plannedBadge: {
+    backgroundColor: '#FFC107',
   },
 });
 

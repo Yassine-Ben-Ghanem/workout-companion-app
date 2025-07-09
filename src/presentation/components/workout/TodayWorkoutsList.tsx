@@ -54,9 +54,7 @@ const TodayWorkoutsList: React.FC = () => {
         <View
           style={[
             styles.workoutStatus,
-            {
-              backgroundColor: item.completed ? '#4CAF50' : '#FFC107',
-            },
+            item.completed ? styles.completedStatus : styles.plannedStatus,
           ]}
         >
           <Text style={styles.statusText}>
@@ -203,6 +201,12 @@ const styles = StyleSheet.create({
     color: '#cc0000',
     textAlign: 'center',
     fontSize: 16,
+  },
+  completedStatus: {
+    backgroundColor: '#4CAF50',
+  },
+  plannedStatus: {
+    backgroundColor: '#FFC107',
   },
 });
 
