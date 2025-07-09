@@ -87,6 +87,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Create env file
+        run: |
+          echo "WEATHER_API_KEY=${{ secrets.WEATHER_API_KEY }}" >> .env
+          echo "WEATHER_API_URL=${{ secrets.WEATHER_API_URL }}" >> .env
+          echo "API_URL=${{ secrets.API_URL }}" >> .env
+
       - name: Install dependencies
         run: pnpm install
 

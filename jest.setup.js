@@ -90,7 +90,11 @@ global.__DEV__ = true;
 
 // Mock react-native-config
 jest.mock('react-native-config', () => ({
-  default: {},
+  default: {
+    API_URL: 'http://test-api.com',
+    WEATHER_API_KEY: 'test-weather-key',
+    WEATHER_API_URL: 'http://test-weather-api.com',
+  },
 }));
 
 // @env will be handled by moduleNameMapper in jest config

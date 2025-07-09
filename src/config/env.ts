@@ -11,8 +11,12 @@ export interface Env {
 // Create a strongly typed config object
 const env: Env = {
   API_URL: Config.API_URL || '',
-  WEATHER_API_KEY: WEATHER_API_KEY || '',
-  WEATHER_API_URL: WEATHER_API_URL || 'https://api.weatherapi.com/v1',
+  // Use Config as fallback for non-test environments
+  WEATHER_API_KEY: WEATHER_API_KEY || Config.WEATHER_API_KEY || '',
+  WEATHER_API_URL:
+    WEATHER_API_URL ||
+    Config.WEATHER_API_URL ||
+    'https://api.weatherapi.com/v1',
 };
 
 export default env;
