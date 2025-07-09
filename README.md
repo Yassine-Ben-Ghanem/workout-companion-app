@@ -113,7 +113,6 @@ The project uses GitHub Actions for CI [[memory:2587494]] with the following che
 
 - Linting
 - Unit and Integration Tests
-- Build Verification
 
 ## 📱 Features
 
