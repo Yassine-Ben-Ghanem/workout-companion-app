@@ -10,6 +10,10 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
+    env:
+      WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+      WEATHER_API_URL: ${{ secrets.WEATHER_API_URL }}
+      API_URL: ${{ secrets.API_URL }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -49,6 +53,10 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    env:
+      WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+      WEATHER_API_URL: ${{ secrets.WEATHER_API_URL }}
+      API_URL: ${{ secrets.API_URL }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
